@@ -1,3 +1,10 @@
+## Fork
+This [neilotoole/golang-cross](https://github.com/neilotoole/golang-cross) repo forks
+the  [docker/golang-cross](https://github.com/docker/golang-cross) repo because that
+repo's images are published with an older version of Go (`1.12.x` at the time of writing).
+This image builds to a newer Go version.
+
+
 
 # Golang Cross Compile Docker Image
 
