@@ -40,10 +40,15 @@ ARG DEBIAN_FRONTEND=noninteractive
 # TODO split these into "build-time" and "runtime" dependencies so that build-time deps do not end up in the final image
 RUN apt-get update -qq && apt-get install -y -q --no-install-recommends \
     clang \
+    cmake \
     file \
     llvm \
     patch \
+    libxml2-dev \
+    libssl-dev \
     xz-utils \
+    zlib1g-dev  \
+    libc++-dev  \
  && rm -rf /var/lib/apt/lists/*
 
 FROM osx-cross-base AS osx-cross
